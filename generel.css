@@ -1,0 +1,56 @@
+/*** Reset ***/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img,
+video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/*** Fonte ***/
+@font-face {
+  font-family: "MADE Kenfolg";
+  src: url("fonts/MADE\ Kenfolg\ PERSONAL\ USE.otf") format("woff2");
+}
+
+/*** Variabler – farver ***/
+html {
+  --sort: #262626;
+  --sand: #e4d9c7;
+}
+
+/*** Overskrifter ***/
+h1 {
+  color: var(--sand);
+  padding-top: 1rem;
+  font-family: "MADE Kenfolg";
+}
+h2 {
+  color: var(--sand);
+  padding-top: 1rem;
+}
+p {
+  color: var(--sand);
+  font-family: "EB Garamond", serif;
+}
+ul {
+  color: var(--sand);
+  list-style: none;
+  line-height: 1.5rem;
+}
+
+/*** FOOTER ***/
+footer {
+  background-color: var(--sort);
+}
+
+.grid_1-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-inline: 2rem;
+}
