@@ -47,6 +47,17 @@ p {
   font-family: "EB Garamond", serif;
   padding-bottom: 0.8rem;
 }
+
+dd {
+  color: var(--sand);
+  font-family: "EB Garamond", serif;
+}
+
+dt {
+  color: var(--sand);
+  font-family: "EB Garamond", serif;
+}
+
 ul {
   color: var(--sand);
   list-style: none;
