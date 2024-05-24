@@ -1,5 +1,6 @@
 body {
-  background-image: url(img/Skærmbillede\ 2024-05-22\ kl.\ 10.54.25.png);
+  background-image: url(frankskro_billeder/IMG_5694.JPG);
+  backdrop-filter: blur(8px);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
