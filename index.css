@@ -6,18 +6,59 @@ body {
   background-position: center;
 }
 
+p {
+  margin-block: 3rem;
+  margin-inline: 1.5rem;
+}
+h1 {
+  margin-inline: 1.5rem;
+}
+.knap {
+  margin-inline: 1.5rem;
+}
 .grid_1-2 {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
+  background-color: var(--sort);
+  margin-bottom: 5rem;
+}
+.grid_2-1 {
   background-color: var(--sort);
   margin-bottom: 5rem;
 }
 
-.grid_2-1 {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  background-color: var(--sort);
-  margin-bottom: 5rem;
+/*** Mobilsite ***/
+@media (max-width: 750px) {
+  form {
+    display: grid;
+    place-items: center;
+  }
+  input {
+    margin-block: 0.8rem;
+  }
+  button {
+    margin-block: 0.8rem;
+  }
+}
+
+/*** Decktop ***/
+@media (min-width: 750px) {
+  .grid_1-2 {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin-bottom: 5rem;
+  }
+
+  .grid_2-1 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin-bottom: 5rem;
+  }
+
+  input {
+    margin-block: 2.5rem;
+  }
+  .order {
+    order: 1;
+  }
 }
 
 /*** Form ***/
@@ -31,7 +72,6 @@ input {
   border: 1px solid var(--sand);
   border-radius: 0.1rem;
   margin-inline: 1rem;
-  margin-block: 2.5rem;
   padding: 0.3rem;
   font-family: "EB Garamond", serif;
   color: var(--sort);
@@ -43,7 +83,6 @@ button {
   border: 2.5px solid var(--sand);
   border-radius: 0.1rem;
   margin-inline: 1rem;
-  margin-block: 2.5rem;
   padding: 0.3rem;
   font-family: "MADE Kenfolg";
   color: var(--sort);

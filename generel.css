@@ -23,7 +23,7 @@ html {
   --sort: #262626;
   --sand: #e4d9c7;
   --sand_t: #e4d9c7bb;
-  --hover: #ada496;
+  --hover: #8d867b;
 }
 
 /*** Overskrifter ***/
@@ -63,6 +63,23 @@ ul {
   list-style: none;
   line-height: 1.5rem;
   padding-bottom: 0.8rem;
+}
+
+a {
+  color: var(--sand);
+  font-family: "MADE Kenfolg";
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+a:hover {
+  color: var(--hover);
+}
+
+.knap {
+  border: 2.5px solid var(--sand);
+  border-radius: 0.1rem;
+  padding: 0.5rem;
 }
 
 /*** MENU ***/
