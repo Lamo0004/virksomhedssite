@@ -1,0 +1,44 @@
+main {
+  background-image: url(IMG_5698.JPG);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.takeaway_intro {
+  background-color: var(--sort);
+}
+
+.menu_grid {
+  background-color: var(--sort);
+}
+
+.bestil_grid {
+  background-color: var(--sort);
+}
+
+@media screen and (min-width: 750px) {
+  .takeaway_grid {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+  }
+}
+
+.takeaway_intro {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 2rem;
+  padding-left: 2rem;
+}
+
+.menu_grid {
+  padding: 10px;
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+.bestil_grid {
+  padding: 10px;
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
