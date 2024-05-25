@@ -114,6 +114,8 @@ footer {
   color: var(--sand);
   font-size: 0.8rem;
   padding: 0.5rem;
+  font-family: "EB Garamond", serif;
+  text-decoration-line: underline;
 }
 
 @media (max-width: 750px) {

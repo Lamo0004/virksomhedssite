@@ -19,10 +19,12 @@ h1 {
 .grid_1-2 {
   background-color: var(--sort);
   margin-bottom: 5rem;
+  padding-bottom: 4rem;
 }
 .grid_2-1 {
   background-color: var(--sort);
   margin-bottom: 5rem;
+  padding-bottom: 4rem;
 }
 
 /*** Mobilsite ***/
@@ -37,6 +39,9 @@ h1 {
   button {
     margin-block: 0.8rem;
   }
+  .grid_1-2 .grid_2-1 {
+    padding-bottom: 4rem;
+  }
 }
 
 /*** Decktop ***/
@@ -45,12 +50,14 @@ h1 {
     display: grid;
     grid-template-columns: 1fr 2fr;
     margin-bottom: 5rem;
+    padding-bottom: 0rem;
   }
 
   .grid_2-1 {
     display: grid;
     grid-template-columns: 2fr 1fr;
     margin-bottom: 5rem;
+    padding-bottom: 0rem;
   }
 
   input {

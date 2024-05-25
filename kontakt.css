@@ -1,5 +1,5 @@
 body {
-  background-image: url(img/356081953_223143617329203_6385663459777382164_n.jpg);
+  background-image: url(frankskro_billeder/IMG_5705.JPG);
   backdrop-filter: blur(8px);
   background-repeat: no-repeat;
   background-size: cover;
@@ -29,6 +29,19 @@ ul {
 .grid_2-5 {
   background-color: var(--sort);
   margin-bottom: 5rem;
+}
+
+iframe {
+  width: 80%;
+  height: 400px;
+}
+.maps {
+  width: 100%;
+  height: auto;
+  margin-bottom: 5rem;
+  display: flex;
+  justify-content: center;
+  filter: grayscale(100%) brightness(75%) contrast(120%);
 }
 
 /*** Decktop ***/
