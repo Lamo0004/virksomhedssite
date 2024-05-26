@@ -1,3 +1,5 @@
+/***GENEREL***/
+
 body {
   background-image: url(frankskro_billeder/IMG_5711.JPG);
   backdrop-filter: blur(8px);
@@ -8,37 +10,6 @@ body {
 
 p {
   font-size: 1.3rem;
-  padding-block: 1.2rem;
-  padding-inline: 1.5rem;
-  font-family: "";
-}
-
-h1 {
-  padding-inline: 1rem;
-}
-
-.h2_indhold {
-  padding-inline: 1rem;
-}
-
-h3 {
-  padding-inline: 1rem;
-}
-
-h4 {
-  padding-inline: 1rem;
-  padding-bottom: 0.5rem;
-}
-
-dl {
-  padding-inline: 1rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  font-size: 1.3rem;
-}
-
-dd {
-  text-align: right;
 }
 
 .takeaway_intro {
@@ -64,11 +35,76 @@ dd {
 /****MOBIL VERSION****/
 
 @media (max-width: 750px) {
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  dl,
+  dd,
+  dt {
+    text-align: center;
+  }
+
+  .takeaway_intro {
+    margin-bottom: 7rem;
+    padding-bottom: 2rem;
+  }
+  .menu_grid {
+    margin-bottom: 7rem;
+    padding-bottom: 2rem;
+  }
+
+  .bestil_grid {
+    padding-bottom: 4rem;
+  }
+
+  .frank_grid {
+    padding-bottom: 4rem;
+  }
+
+  .servering_grid {
+    padding-bottom: 4rem;
+  }
 }
 
 /****WEB VERSION****/
 
 @media screen and (min-width: 750px) {
+  p {
+    font-size: 1.3rem;
+    padding-block: 1.2rem;
+    padding-inline: 1.5rem;
+  }
+
+  h1 {
+    padding-inline: 1rem;
+  }
+
+  .h2_indhold {
+    padding-inline: 1rem;
+  }
+
+  h3 {
+    padding-inline: 1rem;
+  }
+
+  h4 {
+    padding-inline: 1rem;
+    padding-bottom: 0.5rem;
+  }
+
+  dl {
+    padding-inline: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-size: 1.3rem;
+  }
+
+  dd {
+    text-align: right;
+  }
+
   .takeaway_grid {
     display: grid;
     grid-template-columns: 2fr 2fr;
@@ -101,7 +137,8 @@ dd {
     display: grid;
     grid-template-columns: 2fr 1fr;
     margin-left: 10rem;
-    margin-bottom: 4rem;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
     text-align: right;
   }
 
@@ -109,7 +146,7 @@ dd {
     display: grid;
     grid-template-columns: 1fr 2fr;
     margin-right: 10rem;
-    margin-bottom: 4rem;
+    margin-bottom: 5rem;
   }
 
   .order {
