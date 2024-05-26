@@ -42,6 +42,11 @@ h3 {
   padding-top: 1rem;
   font-family: "MADE Kenfolg";
 }
+h4 {
+  color: var(--sand);
+  padding-top: 1rem;
+  font-family: "MADE Kenfolg";
+}
 p {
   color: var(--sand);
   font-family: "EB Garamond", serif;
