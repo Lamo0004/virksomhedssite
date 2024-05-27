@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+/*** Reset ***/
+>>>>>>> 26ed2040417769a83438727412703c44f207fc02
 * {
   margin: 0;
   padding: 0;
@@ -26,6 +30,7 @@ html {
 }
 
 /*** Overskrifter ***/
+<<<<<<< HEAD
 th {
   color: var(--sand);
   padding-top: 1rem;
@@ -36,6 +41,8 @@ td {
   font-family: "EB Garamond", serif;
   padding-bottom: 0.8rem;
 }
+=======
+>>>>>>> 26ed2040417769a83438727412703c44f207fc02
 h1 {
   color: var(--sand);
   padding-top: 1rem;
@@ -195,6 +202,7 @@ footer {
     display: grid;
     grid-template-columns: 1fr 2fr;
   }
+<<<<<<< HEAD
   .navbar {
     overflow: hidden;
   }
@@ -257,6 +265,8 @@ footer {
   .dropdown:hover .dropdown-content {
     display: block;
   }
+=======
+>>>>>>> 26ed2040417769a83438727412703c44f207fc02
 }
 @media (min-width: 750px) {
   .bundlinje {
