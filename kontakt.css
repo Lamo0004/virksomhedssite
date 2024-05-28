@@ -30,6 +30,12 @@ ul {
   background-color: var(--sort);
   margin-bottom: 5rem;
 }
+.kontaktinfo {
+  place-self: center start;
+}
+.job {
+  place-self: center start;
+}
 
 iframe {
   width: 80%;
