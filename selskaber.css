@@ -1,142 +1,55 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: serif;
-}
-
-.baggrund {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  min-height: 200vh;
-  background-image: url(frankskro_billeder/IMG_5694.JPG);
+body {
+  background-image: url(img/419735619_17902541279924247_3598807652102186383_n.jpg);
+  backdrop-filter: blur(8px);
   background-repeat: no-repeat;
   background-size: cover;
-  z-index: -1;
-  filter: blur(5px);
+  background-position: center;
 }
 
-.content {
-  color: #fff;
-  margin-top: 20px;
-  text-align: center;
-  color: black;
-}
-
-.content h1 {
-  margin-bottom: 10px;
-}
-
-.content p {
-  font-size: 20px;
-  filter: none;
-}
-.img_deg {
-  float: right;
-  width: 40%;
+h1 {
   color: beige;
 }
-.grid_1-1 {
-  position: absolute;
-  width: 90%;
-  left: 5%;
-  top: 10%;
-  background-color: #262626;
-  padding: 30px;
+
+p {
   color: beige;
-  font-size: 0.8rem;
-  margin-bottom: 20px;
 }
-.grid_1-2 {
-  width: 65ch;
+
+.selskaber {
+  background-color: var(--sort);
+}
+
+.selskaber_styling {
+  background-color: var(--sort);
   line-height: 1.5;
 }
 
-.grid_2-1 {
-  position: absolute;
-  width: 90%;
-  left: 5%;
-  top: 55%;
-  background-color: #262626;
-  padding: 30px;
-  color: beige;
-  font-size: 0.8rem;
+.festfk {
+  background-color: var(--sort);
 }
-.grid_2-2 {
+
+.festfk_styling {
+  background-color: var(--sort);
   line-height: 1.5;
 }
-.grid_3-1 {
-  position: absolute;
+
+.udfyld_formel {
+  background-color: var(--transparent);
   width: 70%;
-  left: 20%;
-  top: 160%;
-  background-color: transparent;
-  padding: 30px;
+  margin: 10px 10px 10px 10px;
+  padding: 50px 50px 50px 50px;
   color: rgb(0, 0, 0);
   font-size: 0.8rem;
-  margin-bottom: 20px;
 }
 
-.button {
-  background-color: #262626;
-  border: 1px solid beige;
-  color: beige;
-  padding: 10px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 12px;
-  margin: 4px 2px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.button:hover {
-  background-color: beige;
-  color: black;
-}
-
-/*     Mobil version     */
-
-@media (max-width: 750px) {
-  h1 {
-    font-size: 1.9rem;
-  }
-  p {
-    font-size: 0.8rem;
-    width: 45ch;
-  }
-}
-
-/*   WEB VERSION   */
-
-@media screen and (min-width: 750px) {
-  .grid_1-1 {
-    top: 15%;
-  }
-  .grid_2-1 {
-  }
-  .grid_3-1 {
-    top: 125%;
-  }
-}
-
-.form-container {
+.form_styling {
+  background-color: var(--transparent);
   background-color: transparent;
-  padding: 20px;
+  padding: 10px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   max-width: 400px;
   width: 100%;
 }
-
-form {
-  display: flex;
-  flex-direction: column;
-}
-
 label {
   margin-bottom: 5px;
   font-weight: bold;
@@ -150,7 +63,26 @@ textarea {
   background-color: rgba(228, 225, 225, 0.8);
 }
 
-button {
+.button1 {
+  background-color: #262626;
+  border: 1px solid beige;
+  color: beige;
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button1:hover {
+  background-color: beige;
+  color: black;
+}
+
+.button2 {
   background-color: #ffffff;
   border: 1px solid rgb(0, 0, 0);
   color: rgb(0, 0, 0);
@@ -164,7 +96,93 @@ button {
   transition: background-color 0.3s ease;
 }
 
-button:hover {
+.button2:hover {
   background-color: rgb(0, 0, 0);
   color: rgb(255, 255, 255);
+}
+
+.pos {
+  padding: 10px 0px 00px 0px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer {
+  text-align: left;
+}
+
+/*          Mobil version         */
+
+@media (max-width: 750px) {
+  p,
+  h1 {
+    text-align: left;
+    padding-bottom: 10px;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+  p {
+    font-size: 1rem;
+  }
+
+  .selskaber {
+    margin: 1rem;
+  }
+
+  .selskaber_styling {
+    padding: 20px 20px 40px;
+  }
+
+  .festfk {
+    margin: 1rem;
+  }
+  .festfk_styling {
+    padding: 20px 20px 40px;
+  }
+}
+
+/*          Desktop version         */
+
+@media screen and (min-width: 750px) {
+  p,
+  h1 {
+    text-align: left;
+    padding-bottom: 10px;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  p {
+    font-size: 1rem;
+  }
+
+  .selskaber {
+    margin: 20px 40px 20px 40px;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+  }
+
+  .pos {
+    padding: 0px 0px 0px 0px;
+  }
+
+  .selskaber_styling {
+    padding: 5px 50px;
+  }
+
+  .festfk {
+    margin: 20px 40px 20px 40px;
+  }
+
+  .festfk_styling {
+    padding: 20px 50px 60px;
+  }
+
+  .order {
+    order: 1;
+  }
 }
