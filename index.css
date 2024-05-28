@@ -9,22 +9,77 @@ body {
 p {
   margin-block: 3rem;
   margin-inline: 1.5rem;
+  max-width: 65ch;
 }
+
 h1 {
   margin-inline: 1.5rem;
 }
+
 .knap {
   margin-inline: 1.5rem;
 }
+
 .grid_1-2 {
   background-color: var(--sort);
   margin-bottom: 5rem;
   padding-bottom: 4rem;
 }
+
 .grid_2-1 {
   background-color: var(--sort);
   margin-bottom: 5rem;
   padding-bottom: 4rem;
+}
+
+.kromad {
+  place-self: center start;
+}
+.selskaber {
+  place-self: center start;
+}
+
+/*** HERO-section ***/
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.content {
+  position: relative;
+}
+
+.lottie {
+  width: 100%;
+}
+
+.video {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  object-fit: cover;
+  width: auto;
+  height: 100%;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+@media (min-aspect-ration: 16/9) {
+  .video {
+    width: 100%;
+    height: auto;
+  }
+}
+@media (max-aspect-ration: 16/9) {
+  .video {
+    width: auto;
+    height: 100%;
+  }
 }
 
 /*** Mobilsite ***/
@@ -65,6 +120,20 @@ h1 {
   }
   .order {
     order: 1;
+  }
+
+  .kromad {
+    padding: 2rem;
+  }
+  .selskaber {
+    padding: 2rem;
+  }
+}
+
+/*** Stor decktop ***/
+@media (min-width: 1200px) {
+  .space {
+    margin-inline: 6rem;
   }
 }
 

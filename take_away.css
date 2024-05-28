@@ -13,23 +13,31 @@ p {
 }
 
 .takeaway_intro {
-  background-color: var(--sort);
+  background-color: var(--sand);
 }
 
 .menu_grid {
-  background-color: var(--sort);
+  background-color: var(--sand);
 }
 
 .bestil_grid {
-  background-color: var(--sort);
+  background-color: var(--sand);
 }
 
 .frank_grid {
-  background-color: var(--sort);
+  background-color: var(--sand);
 }
 
 .servering_grid {
-  background-color: var(--sort);
+  background-color: var(--sand);
+}
+
+.menu_style {
+  color: var(--sort);
+}
+
+.h2_indhold {
+  color: var(--sort);
 }
 
 /****MOBIL VERSION****/
@@ -66,6 +74,10 @@ p {
   .servering_grid {
     padding-bottom: 4rem;
   }
+}
+
+.footer {
+  text-align: left;
 }
 
 /****WEB VERSION****/
@@ -121,7 +133,7 @@ p {
   .menu_grid {
     padding: 1px;
     margin-left: 3rem;
-    margin-right: 10rem;
+    margin-right: 3rem;
     margin-bottom: 3rem;
     padding-bottom: 2rem;
   }

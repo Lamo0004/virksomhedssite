@@ -39,12 +39,20 @@
         </nav>
     </header>
     <div>
-        <video></video>
-        <dotlottie-player></dotlottie-player>
-        <div>
-            <a class="knap" href="book_bord.html">Book Bord</a>
-            <a class="knap" href="menu.html">Menu</a>
-            <a class="knap" href="take_away.html">Take away</a>
+        <video autoplay loop muted plays-inline class="video">
+            <source src="" type="video/mp4">
+        </video>
+        <div class="content">
+            <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+                type="module"></script>
+            <dotlottie-player src="https://lottie.host/a0fc4262-e027-4ce6-91de-fbb25965a8da/fHP3kIspTY.json"
+                background="transparent" speed="1" style="width: 500px; height: 300px;" loop
+                autoplay></dotlottie-player>
+            <div>
+                <a class="knap" href="book_bord.html">Book Bord</a>
+                <a class="knap" href="menu.html">Menu</a>
+                <a class="knap" href="take_away.html">Take away</a>
+            </div>
         </div>
     </div>
     <main>
@@ -52,11 +60,13 @@
             <div>
                 <img src="img/333107691_1264090764316972_9165378342895399679_n.jpg" alt="mad">
             </div>
-            <div>
+            <div class="kromad">
                 <h1>Traditionel dansk kromad</h1>
-                <p>Velkommen til Frank's Kro! Her serverer vores hjertevarme, nærværende personale klassisk dansk mad,
+                <p>Velkommen til Frank's Kro! Her serverer vores hjertevarme, nærværende personale klassisk dansk
+                    mad,
                     sjusser og kolde øl,
-                    alt sammen imens der spilles danske hits ud af højtaleren. Besøg os i vores restaurant i København,
+                    alt sammen imens der spilles danske hits ud af højtaleren. Besøg os i vores restaurant i
+                    København,
                     og træd ind i de
                     nostalgiske lokaler på Fredensgade 11. Vi glæder os til at tage imod jer!</p>
                 <a class="knap" href="menu.html">Menu</a>
@@ -66,9 +76,10 @@
             <div class="order">
                 <img src="img/381031668_17886928562924247_5247697157251375291_n.jpg" alt="selskaber">
             </div>
-            <div>
+            <div class="selskaber">
                 <h1>Selskaber</h1>
-                <p>På Frank’s kro er vi altid frisk på at afholde dit arrangement. Om det er fødselsdag, polterabend,
+                <p>På Frank’s kro er vi altid frisk på at afholde dit arrangement. Om det er fødselsdag,
+                    polterabend,
                     firmaarrangement,
                     julefrokost, påskefrokost og så videre, så er vi der for at sørge for at I får den sjoveste dag
                     eller aften. </p>
