@@ -9,7 +9,12 @@ body {
   background-size: cover;
   background-position: center;
 }
-/* /////Mobilsite////// */
+header {
+  background-color: #ae61596b;
+}
+.menu a {
+  color: var(--sand);
+}
 
 /* menu css */
 table {
@@ -29,7 +34,7 @@ td {
   font-size: 9px;
 }
 .mad_grid {
-  background-color: var(--sand);
+  background-color: var(--sort);
   border-radius: 0.2rem;
   padding: 20px 30px 20px 30px;
   text-align: center;
@@ -37,12 +42,12 @@ td {
 }
 .drikke_tekst {
   text-align: left;
-  color: var(--sort);
+  color: var(--sand);
   margin-top: 6rem;
   font-size: 9px;
 }
 .drikke_grid {
-  background-color: var(--sand);
+  background-color: var(--sort);
   border-radius: 0.2rem;
   padding: 20px 30px 20px 30px;
   text-align: center;
@@ -50,7 +55,7 @@ td {
   margin: 1rem;
 }
 .sommerpakken_grid {
-  background-color: var(--sand);
+  background-color: var(--sort);
   border-radius: 0.2rem;
   padding: 20px 30px 20px 30px;
   text-align: center;
@@ -58,7 +63,7 @@ td {
   margin: 1rem;
 }
 h1 {
-  color: #262626;
+  color: var(--sand);
   padding-top: 1rem;
   font-family: "MADE Kenfolg";
   font-size: 20px;
@@ -67,7 +72,7 @@ h3 {
   font-size: 0.7rem;
   line-height: 1rem;
   margin-bottom: 0.5rem;
-  color: #262626;
+  color: var(--sand);
 }
 
 /* ////////Desktop//////// */
@@ -95,7 +100,7 @@ h3 {
   }
 
   .mad_grid {
-    background-color: var(--sand);
+    background-color: var(--sort);
     border-radius: 0.2rem;
     padding: 20px 30px 20px 30px;
     text-align: center;
@@ -109,7 +114,7 @@ h3 {
     margin-top: 6rem;
   }
   .drikke_grid {
-    background-color: var(--sand);
+    background-color: var(--sort);
     border-radius: 0.2rem;
     padding: 20px 30px 20px 30px;
     text-align: center;
@@ -120,7 +125,7 @@ h3 {
   }
 
   .sommerpakken_grid {
-    background-color: var(--sand);
+    background-color: var(--sort);
     border-radius: 0.2rem;
     padding: 20px 30px 20px 30px;
     text-align: center;

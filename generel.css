@@ -23,25 +23,26 @@ video {
 
 /*** Variabler – farver ***/
 html {
-  --sort: #262626;
-  --sand: #e4d9c7;
+  --sort: #ae6159;
+  --sand: #fbfbf1;
   --sand_t: #e4d9c7bb;
   --hover: #8d867b;
+  --header: #ae61596b;
 }
 
 /*** Overskrifter ***/
 th {
-  color: var(--sort);
+  color: var(--sand);
   padding-top: 1rem;
   font-family: "MADE Kenfolg";
 }
 td {
-  color: var(--sort);
+  color: var(--sand);
   font-family: "EB Garamond", serif;
   padding-bottom: 0.8rem;
 }
 h1 {
-  color: var(--sort);
+  color: var(--sand);
   padding-top: 1rem;
   font-family: "MADE Kenfolg";
 }
@@ -51,7 +52,7 @@ h2 {
   font-family: "MADE Kenfolg";
 }
 h3 {
-  color: var(--sort);
+  color: var(--sand);
   padding-top: 1rem;
   font-family: "MADE Kenfolg";
 }
@@ -64,6 +65,7 @@ p {
   color: var(--sand);
   font-family: "EB Garamond", serif;
   padding-bottom: 0.8rem;
+  max-width: 65ch;
 }
 
 dd {
@@ -86,9 +88,7 @@ ul {
 .btn {
   transition: all 0.4s;
   background-color: var(--sand);
-  border: var(--sand);
   border-radius: 0.2rem;
-  border: solid 1px;
   padding: 0.7rem 1.2rem;
   color: var(--sort);
   text-decoration: none;
@@ -101,12 +101,6 @@ ul {
   transform: scale(1.1);
 }
 
-.hero_knap {
-  display: flex;
-  text-align: center;
-  justify-content: space-between;
-}
-
 .h_knap {
   border-radius: 0.2rem;
   border: solid 1px;
@@ -114,7 +108,7 @@ ul {
   font-family: "EB Garamond", serif;
   font-weight: 600;
   width: 100%;
-  margin-inline: 1rem;
+  margin-inline: 2rem;
   color: var(--sand);
   text-decoration: none;
   transition: transform 0.3s ease-in-out;
@@ -123,12 +117,11 @@ ul {
 }
 
 .h_knap:hover {
-  background-color: var(--sand_t);
-  color: var(--sort);
+  background-color: var(--sort);
+  color: var(--sand);
   transition: 0.5s;
 }
 
 a {
   text-decoration: none;
-  color: none;
 }
