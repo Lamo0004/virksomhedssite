@@ -47,7 +47,7 @@ td {
   font-size: 9px;
 }
 .drikke_grid {
-  background-color: var(--sand);
+  background-color: var(--sort);
   border-radius: 0.2rem;
   padding: 20px 30px 20px 30px;
   text-align: center;
