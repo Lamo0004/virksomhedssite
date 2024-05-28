@@ -7,8 +7,8 @@ header {
 }
 
 body {
-  background-image: url(frankskro_billeder/IMG_5711.JPG);
-  backdrop-filter: blur(8px);
+  background-image: url(frankskro_billeder/IMG_5694.JPG);
+  backdrop-filter: blur(7px);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -49,20 +49,21 @@ p {
 /****MOBIL VERSION****/
 
 @media (max-width: 750px) {
+  body {
+    background-color: var(--sort);
+  }
   p,
   h1,
   h2,
-  h3,
-  h4,
-  dl,
-  dd,
-  dt {
+  h4 {
     text-align: center;
   }
-
+  p {
+    font-size: 16px;
+    padding: 1rem;
+  }
   .takeaway_intro {
     margin-bottom: 7rem;
-    padding-bottom: 2rem;
   }
   .menu_grid {
     margin-bottom: 7rem;
@@ -70,11 +71,12 @@ p {
   }
 
   .bestil_grid {
-    padding-bottom: 4rem;
+    margin-bottom: 4rem;
+    padding-bottom: 2rem;
   }
 
   .frank_grid {
-    padding-bottom: 4rem;
+    margin-bottom: 4rem;
   }
 
   .servering_grid {
@@ -126,6 +128,8 @@ p {
   .takeaway_grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin: -1rem;
+    padding: 2rem;
   }
 
   .takeaway_intro {
@@ -134,7 +138,10 @@ p {
     margin-bottom: 3rem;
     padding-left: 2rem;
     padding-bottom: 2rem; */
-    margin: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    margin: 4rem;
   }
 
   .menu_grid {
