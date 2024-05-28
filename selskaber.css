@@ -7,11 +7,15 @@ body {
 }
 
 h1 {
-  color: beige;
+  color: rgb(255, 255, 255);
 }
 
 p {
-  color: beige;
+  color: rgb(255, 255, 255);
+}
+
+.hr {
+  color: white;
 }
 
 .selskaber {
@@ -32,41 +36,31 @@ p {
   line-height: 1.5;
 }
 
-.udfyld_formel {
-  background-color: var(--transparent);
-  width: 70%;
-  margin: 10px 10px 10px 10px;
-  padding: 50px 50px 50px 50px;
-  color: rgb(0, 0, 0);
-  font-size: 0.8rem;
+form {
+  display: flex;
+  flex-direction: column;
 }
 
 .form_styling {
   background-color: var(--transparent);
   background-color: transparent;
+  margin: 10px 50px 50px 50px;
   padding: 10px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   max-width: 400px;
-  width: 100%;
+  min-width: 300px;
 }
+
 label {
   margin-bottom: 5px;
   font-weight: bold;
 }
 
-input,
-textarea {
-  margin-bottom: 15px;
-  padding: 10px;
-  border: 1px solid #000000;
-  background-color: rgba(228, 225, 225, 0.8);
-}
-
 .button1 {
-  background-color: #262626;
-  border: 1px solid beige;
-  color: beige;
+  background-color: transparent;
+  border: 1px solid rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
   padding: 10px 32px;
   text-align: center;
   text-decoration: none;
@@ -78,14 +72,14 @@ textarea {
 }
 
 .button1:hover {
-  background-color: beige;
+  background-color: rgb(255, 255, 255);
   color: black;
 }
 
 .button2 {
-  background-color: #ffffff;
+  background-color: #715555;
   border: 1px solid rgb(0, 0, 0);
-  color: rgb(0, 0, 0);
+  color: beige;
   padding: 10px 32px;
   text-align: center;
   text-decoration: none;
@@ -105,32 +99,32 @@ textarea {
   padding: 10px 0px 00px 0px;
 }
 
-form {
-  display: flex;
-  flex-direction: column;
-}
-
 .footer {
   text-align: left;
 }
 
 /*          Mobil version         */
 
-@media (max-width: 750px) {
+@media (max-width: 800px) {
   p,
   h1 {
     text-align: left;
     padding-bottom: 10px;
   }
   h1 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
   p {
+    font-size: 0.6rem;
+  }
+
+  h2 {
     font-size: 1rem;
+    padding-left: 0;
   }
 
   .selskaber {
-    margin: 1rem;
+    margin: 30px 20px 30px 20px;
   }
 
   .selskaber_styling {
@@ -143,25 +137,44 @@ form {
   .festfk_styling {
     padding: 20px 20px 40px;
   }
+
+  input,
+  textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #000000;
+    background-color: rgba(228, 225, 225, 0.8);
+    font-size: 0.5rem;
+  }
+
+  .form_styling {
+    transform: scale(0.8);
+  }
+
+  .button1 {
+    transform: scale(0.7);
+  }
 }
 
 /*          Desktop version         */
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 800px) {
   p,
   h1 {
     text-align: left;
     padding-bottom: 10px;
   }
+
   h1 {
     font-size: 2rem;
   }
+
   p {
     font-size: 1rem;
   }
 
   .selskaber {
-    margin: 20px 40px 20px 40px;
+    margin: 50px 40px 20px 40px;
     display: grid;
     grid-template-columns: 2fr 2fr;
   }
@@ -171,18 +184,26 @@ form {
   }
 
   .selskaber_styling {
-    padding: 5px 50px;
+    padding: 50px 50px;
   }
 
   .festfk {
-    margin: 20px 40px 20px 40px;
+    margin: 40px 40px 20px 40px;
   }
 
   .festfk_styling {
-    padding: 20px 50px 60px;
+    padding: 50px 50px 60px;
   }
 
   .order {
     order: 1;
+  }
+  input,
+  textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #000000;
+    background-color: rgba(228, 225, 225, 0.8);
+    font-size: 0.5rem;
   }
 }
