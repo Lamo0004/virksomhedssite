@@ -1,0 +1,176 @@
+/*** MENU ***/
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  /* background-color: var(--sand_t); */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 10;
+}
+
+.logo img {
+  width: 50px;
+  height: 50px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  margin-right: 20px;
+}
+
+.menu li:last-child {
+  margin-right: 0;
+}
+
+.menu a {
+  display: block;
+  padding: 10px;
+  color: var(--sand);
+  text-decoration: none;
+  transition: color 0.3s;
+  text-align: end;
+  font-family: "MADE Kenfolg";
+  color: var(--sand);
+}
+
+.menu a:hover {
+  color: var(--sort);
+}
+
+.burger {
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.burger .line {
+  width: 80%;
+  height: 1.7px;
+  background-color: var(--sort);
+  margin-bottom: 5px;
+  transition: 0.2s linear;
+}
+.burger {
+  display: none;
+}
+
+/*** FOOTER ***/
+footer {
+  background-color: var(--sort);
+}
+
+.grid_1-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.fa {
+  padding: 1rem;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: var(--sand);
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.bundlinje {
+  place-items: center center;
+}
+
+.links {
+  color: var(--sand);
+  font-size: 0.8rem;
+  padding: 0.5rem;
+  font-family: "EB Garamond", serif;
+  text-decoration-line: underline;
+}
+@media (max-width: 750px) {
+  .bundlinje {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+}
+@media (min-width: 750px) {
+  .bundlinje {
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+  }
+
+  .ikoner {
+    grid-column: 2;
+  }
+
+  .links {
+    grid-column: 3;
+  }
+
+  .grid_1-1 {
+    margin-inline: 2rem;
+  }
+}
+
+/* menu mobile */
+@media screen and (max-width: 800px) {
+  .logo-header {
+    width: 22%;
+  }
+  .menu {
+    display: none;
+  }
+  .burger {
+    display: block;
+  }
+  .burger.active .line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+    transition: 0.2s linear;
+  }
+
+  .burger.active .line:nth-child(2) {
+    opacity: 0;
+    transition: 0.15s linear;
+  }
+
+  .burger.active .line:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+    transition: 0.2s linear;
+  }
+
+  nav.active .menu {
+    display: block;
+
+    backdrop-filter: blur(8px);
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+  }
+
+  nav.active .menu li {
+    margin: 5px 5px;
+  }
+
+  nav.active .menu a {
+    font-size: 12px;
+    color: #262626;
+  }
+  nav.active .menu a:hover {
+    color: var(--sand_t);
+  }
+}
