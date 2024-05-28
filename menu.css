@@ -2,7 +2,7 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  /* background-image: url(img/IMG_5701.JPG); */
+  background-image: url(img/333107691_1264090764316972_9165378342895399679_n.jpg);
 
   backdrop-filter: blur(8px);
   background-repeat: no-repeat;
@@ -10,67 +10,66 @@ body {
   background-position: center;
 }
 /* /////Mobilsite////// */
-@media (max-width: 750px) {
-  /* menu css */
-  table {
-    font-family: arial, sans-serif;
-    border-collapse: collapse;
-    width: 100%;
-  }
-  th {
-    text-align: left;
-    padding: 8px;
-    border-bottom: solid 0.05rem;
-    font-size: 10px;
-  }
-  td {
-    text-align: left;
-    padding: 8px;
-    font-size: 9px;
-  }
-  .mad_grid {
-    background-color: #262626;
-    border-radius: 0.2rem;
-    padding: 20px 30px 20px 30px;
-    text-align: center;
-    margin: 1rem;
-    color: var(--sand);
-  }
-  .drikke_tekst {
-    text-align: left;
-    color: var(--sand);
-    margin-top: 6rem;
-    font-size: 9px;
-  }
-  .drikke_grid {
-    background-color: #262626;
-    border-radius: 0.2rem;
-    padding: 20px 30px 20px 30px;
-    text-align: center;
-    margin-top: 5rem;
-    margin: 1rem;
-    color: var(--sand);
-  }
-  .sommerpakken_grid {
-    background-color: #262626;
-    border-radius: 0.2rem;
-    padding: 20px 30px 20px 30px;
-    text-align: center;
-    margin-top: 5rem;
-    margin: 1rem;
-    color: var(--sand);
-  }
-  h1 {
-    color: var(--sand);
-    padding-top: 1rem;
-    font-family: "MADE Kenfolg";
-    font-size: 20px;
-  }
-  h3 {
-    font-size: 0.7rem;
-    line-height: 1rem;
-    margin-bottom: 0.5rem;
-  }
+
+/* menu css */
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+th {
+  text-align: left;
+  padding: 8px;
+  border-bottom: solid 0.05rem;
+  font-size: 10px;
+}
+td {
+  text-align: left;
+  padding: 8px;
+  font-size: 9px;
+}
+.mad_grid {
+  background-color: #262626;
+  border-radius: 0.2rem;
+  padding: 20px 30px 20px 30px;
+  text-align: center;
+  margin: 1rem;
+  color: var(--sand);
+}
+.drikke_tekst {
+  text-align: left;
+  color: var(--sand);
+  margin-top: 6rem;
+  font-size: 9px;
+}
+.drikke_grid {
+  background-color: #262626;
+  border-radius: 0.2rem;
+  padding: 20px 30px 20px 30px;
+  text-align: center;
+  margin-top: 5rem;
+  margin: 1rem;
+  color: var(--sand);
+}
+.sommerpakken_grid {
+  background-color: #262626;
+  border-radius: 0.2rem;
+  padding: 20px 30px 20px 30px;
+  text-align: center;
+  margin-top: 5rem;
+  margin: 1rem;
+  color: var(--sand);
+}
+h1 {
+  color: var(--sand);
+  padding-top: 1rem;
+  font-family: "MADE Kenfolg";
+  font-size: 20px;
+}
+h3 {
+  font-size: 0.7rem;
+  line-height: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 /* ////////Desktop//////// */
@@ -104,6 +103,7 @@ body {
     text-align: center;
     margin: 14rem;
     color: var(--sand);
+    margin-top: -10rem;
   }
   .drikke_tekst {
     text-align: left;
@@ -118,7 +118,9 @@ body {
     margin-top: 1rem;
     margin: 14rem;
     color: var(--sand);
+    margin-top: -10rem;
   }
+
   .sommerpakken_grid {
     background-color: #262626;
     border-radius: 0.2rem;
@@ -127,13 +129,10 @@ body {
     margin-top: 1rem;
     margin: 14rem;
     color: var(--sand);
+    margin-top: 3rem;
   }
+
   .mad_tekst {
-    text-align: left;
-    color: var(--sand);
-    margin-top: 6rem;
-  }
-  .drikke_tekst {
     text-align: left;
     color: var(--sand);
     margin-top: 6rem;
