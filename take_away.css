@@ -17,11 +17,11 @@ p {
 }
 
 .menu_grid {
-  background-color: var(--sort);
+  background-color: var(--sand);
 }
 
 .bestil_grid {
-  background-color: var(--sort);
+  background-color: var(--sand);
 }
 
 .frank_grid {
@@ -33,10 +33,6 @@ p {
 }
 
 .menu_style {
-  color: var(--sort);
-}
-
-.menu_text {
   color: var(--sort);
 }
 
@@ -137,7 +133,7 @@ p {
   .menu_grid {
     padding: 1px;
     margin-left: 3rem;
-    margin-right: 10rem;
+    margin-right: 3rem;
     margin-bottom: 3rem;
     padding-bottom: 2rem;
   }
