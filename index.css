@@ -9,8 +9,7 @@ header {
 }
 
 body {
-  background-image: url(frankskro_billeder/IMG_5694.JPG);
-  backdrop-filter: blur(8px);
+  background-image: url(img/391613243_17888920418924247_8605938032101279000_n.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -19,30 +18,12 @@ body {
 p {
   margin-block: 3rem;
   margin-inline: 1.5rem;
-  max-width: 65ch;
+  color: #fbfbf1;
 }
 
 h1 {
   margin-inline: 1.5rem;
-}
-
-.grid_1-2 {
-  background-color: var(--sort);
-  margin-bottom: 5rem;
-  padding-bottom: 4rem;
-}
-
-.grid_2-1 {
-  background-color: var(--sort);
-  margin-bottom: 5rem;
-  padding-bottom: 4rem;
-}
-
-.kromad {
-  place-self: center start;
-}
-.selskaber {
-  place-self: center start;
+  color: #fbfbf1;
 }
 
 /*** HERO-section ***/
@@ -101,25 +82,42 @@ h1 {
   button {
     margin-block: 0.8rem;
   }
-  .grid_1-2 .grid_2-1 {
-    padding-bottom: 4rem;
+  .kromad {
+    place-self: center start;
+    background-color: var(--sand);
+  }
+  .selskaber {
+    place-self: center start;
+    background-color: var(--sand);
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+  }
+  h1 {
+    font-size: 18px;
+  }
+  p {
+    font-size: 14px;
   }
 }
 
 /*** Decktop ***/
 @media (min-width: 750px) {
-  .grid_1-2 {
+  .grid_1-1_1-1 {
     display: grid;
-    grid-template-columns: 1fr 2fr;
-    margin-bottom: 5rem;
-    padding-bottom: 0rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
   }
 
-  .grid_2-1 {
+  .kromad {
+    place-self: center start;
+    background-color: #ae6159;
+  }
+  .selskaber {
+    place-self: center start;
+    background-color: #ae6159;
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    margin-bottom: 5rem;
-    padding-bottom: 0rem;
+    grid-column: 2/3;
+    grid-row: 2/3;
   }
 
   input {
@@ -157,7 +155,7 @@ input {
   margin-inline: 1rem;
   padding: 0.3rem;
   font-family: "EB Garamond", serif;
-  color: var(--sort);
+  color: var(--sand);
   width: 15rem;
 }
 
@@ -168,7 +166,7 @@ button {
   margin-inline: 1rem;
   padding: 0.3rem;
   font-family: "MADE Kenfolg";
-  color: var(--sort);
+  color: var(--sand);
 }
 
 button:hover {
