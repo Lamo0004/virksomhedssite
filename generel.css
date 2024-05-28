@@ -165,7 +165,6 @@ footer {
 .grid_1-1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin-inline: 2rem;
 }
 
 .fa {
@@ -272,5 +271,9 @@ footer {
 
   .links {
     grid-column: 3;
+  }
+
+  .grid_1-1 {
+    margin-inline: 2rem;
   }
 }

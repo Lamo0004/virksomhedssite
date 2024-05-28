@@ -68,6 +68,13 @@ p {
   }
 }
 
+.footer {
+  text-align: left;
+}
+
+.grid_1-1 {
+  margin-inline: ;
+}
 /****WEB VERSION****/
 
 @media screen and (min-width: 750px) {
