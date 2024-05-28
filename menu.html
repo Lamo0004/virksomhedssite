@@ -12,37 +12,27 @@
 </head>
 
 <body>
-    <nav>
-        <ul class="sidebar">
-            <li onclick="hideSidebar()">
-                <a href=""><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px"
-                        fill="#e8eaed">
-                        <path
-                            d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
-                    </svg></a>
-            </li>
-            <li><a href="#">Menu</a></li>
-            <li><a href="#">Take-Away</a></li>
-            <li><a href="#">Selskab</a></li>
-            <li><a href="#">Book bord</a></li>
-            <li><a href="#">Kontakt</a></li>
-        </ul>
-        <ul>
-            <li class="hideOnMobile"><a href="">LOGO</a></li>
-            <li class="hideOnMobile"><a href="">Menu</a></li>
-            <li class="hideOnMobile"><a href="">Take-Away</a></li>
-            <li class="hideOnMobile"><a href="">Selskab</a></li>
-            <li class="hideOnMobile"><a href="">Book bord</a></li>
-            <li class="hideOnMobile"><a href="">Kontakt</a></li>
-            <li class="menu-button" onclick=showSidebar()><a href=""><svg xmlns="http://www.w3.org/2000/svg"
-                        height="26px" viewBox="0 -960 960 960" width="26px" fill="#e8eaed">
-                        <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
-                    </svg> </a></li>
-
-
-
-        </ul>
-    </nav>
+    <header>
+        <div class="logo-header">
+            <a href="index.html">
+                <img src="logo_fk.png" alt="Logo">
+            </a>
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="take_away.html">Take-away</a></li>
+                <li><a href="book_bord.html">Book bord</a></li>
+                <li><a href="selskaber.html">Selskaber</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </nav>
+    </header>
 
 
 
@@ -1004,17 +994,7 @@
         </div>
     </footer>
 
-    <script>
-        function showSidebar() {
-            const sidebar = document.querySelector('.sidebar')
-            sidebar.style.display = 'flex'
-        }
-        // function hideSidebar() {
-        //     const sidebar = document.querySelector('.sidebar')
-        //     sidebar.style.display = 'none'
-
-
-    </script>
+    <script src="menu.js"></script>
 </body>
 
 </html>
