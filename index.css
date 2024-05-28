@@ -94,11 +94,9 @@ button {
     margin-block: 0.8rem;
   }
   .kromad {
-    place-self: center start;
     background-color: var(--sort);
   }
   .selskaber {
-    place-self: center start;
     background-color: var(--sort);
     margin-top: 5rem;
     margin-bottom: 3rem;
@@ -120,11 +118,9 @@ button {
   }
 
   .kromad {
-    place-self: center start;
     background-color: var(--sort);
   }
   .selskaber {
-    place-self: center start;
     background-color: var(--sort);
     display: grid;
     grid-column: 2/3;
@@ -145,13 +141,6 @@ button {
     padding: 2rem;
   }
 }
-
-/*** Stor decktop ***/
-/* @media (min-width: 1200px) {
-  .space {
-    margin-inline: 6rem;
-  }
-} */
 
 /*** Form ***/
 .form {
