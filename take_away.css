@@ -40,6 +40,11 @@ p {
   color: var(--sort);
 }
 
+.hero {
+  text-align: center;
+  color: var(--sort);
+}
+
 /****MOBIL VERSION****/
 
 @media (max-width: 750px) {
@@ -54,24 +59,35 @@ p {
     text-align: center;
   }
 
+  h2,
+  h3,
+  h4 {
+    padding-bottom: 2rem;
+  }
+
   .takeaway_intro {
+    padding-top: 2rem;
     margin-bottom: 7rem;
     padding-bottom: 2rem;
   }
   .menu_grid {
+    padding-top: 1rem;
     margin-bottom: 7rem;
     padding-bottom: 2rem;
   }
 
   .bestil_grid {
-    padding-bottom: 4rem;
+    padding-top: 1rem;
+    padding-bottom: 3rem;
   }
 
   .frank_grid {
-    padding-bottom: 4rem;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
   }
 
   .servering_grid {
+    padding-top: 2rem;
     padding-bottom: 4rem;
   }
 }
