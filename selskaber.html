@@ -42,24 +42,24 @@
     </header>
 
     <main>
-        <div class="selskaber">
-            <div class="selskaber_styling">
-                <h1>Selskaber</h1>
-                <hr class="hr">
-                <br>
-                <p>Om det er fødselsdag, polterabend, firmaarrangement, julefrokost, påskefrokost
-                    og så videre, så er vi der for at sørge
-                    for at I får den sjoveste dag eller aften.
-                </p>
-                <button class="button1">Kontakt os</button>
+        <div class="selskaber_layout">
+            <div class="selskaber">
+                <div class="selskaber_styling">
+                    <h1>Selskaber</h1>
+                    <hr class="hr">
+                    <br>
+                    <p>Om det er fødselsdag, polterabend, firmaarrangement, julefrokost, påskefrokost
+                        og så videre, så er vi der for at sørge
+                        for at I får den sjoveste dag eller aften.
+                    </p>
+                    <button class="button1">Kontakt os</button>
+                </div>
             </div>
-
             <div class="billede1">
                 <div class="pos">
                     <img src="img/328064044_1623779288050817_4751166276781532971_n.jpg" alt="Fransk's Kro billede">
                 </div>
             </div>
-
         </div>
 
         <div class="festfk">
@@ -115,34 +115,30 @@
             </div>
         </div>
 
+        <div class="form-container">
+            <div class="udfyld_formel">
+                <div class="form_styling">
+                    <form action="/submit" method="post">
 
-        <div class="udfyld_formel">
-            <div class="form_styling">
-                <form action="/submit" method="post">
+                        <h3> Skal du holde fest eller event? Få et tilbud
+                            <br> <br>
+                        </h3>
 
-                    <h3> Skal du holde fest eller event? Få et tilbud
-
-                        <br>
-                        <br>
-                    </h3>
-
-                    <input type="text" id="first-name" name="first-name" placeholder="Fornavn" required>
+                        <input type="text" id="first-name" name="first-name" placeholder="Fornavn" required>
 
 
-                    <input type="text" id="last-name" name="last-name" placeholder="Efternavn" required>
+                        <input type="text" id="last-name" name="last-name" placeholder="Efternavn" required>
 
 
-                    <input type="tel" id="phone" name="phone" placeholder="Tlf. Nr." required>
+                        <input type="tel" id="phone" name="phone" placeholder="Tlf. Nr." required>
 
 
-                    <textarea id="message" name="message" rows="4" placeholder="Skriv besked.." required></textarea>
-
-                    <button class="button2" type="submit">Send besked</button>
-                </form>
+                        <textarea id="message" name="message" rows="4" placeholder="Skriv besked.." required></textarea>
+                        <button class="button2" type="submit">Send besked</button>
+                    </form>
+                </div>
             </div>
         </div>
-
-
     </main>
 
     <footer>

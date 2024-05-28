@@ -36,15 +36,26 @@ p {
   line-height: 1.5;
 }
 
+/*      Form     */
+
 form {
   display: flex;
   flex-direction: column;
 }
 
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
 .form_styling {
   background-color: var(--transparent);
   background-color: transparent;
-  margin: 10px 50px 50px 50px;
+  justify-content: center;
   padding: 10px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -95,17 +106,13 @@ label {
   color: rgb(255, 255, 255);
 }
 
-.pos {
-  padding: 10px 0px 00px 0px;
-}
-
 .footer {
   text-align: left;
 }
 
 /*          Mobil version         */
 
-@media (max-width: 800px) {
+@media (max-width: 950px) {
   p,
   h1 {
     text-align: left;
@@ -124,11 +131,15 @@ label {
   }
 
   .selskaber {
-    margin: 30px 20px 30px 20px;
+    margin: 40px 20px 20px 20px;
   }
 
   .selskaber_styling {
-    padding: 20px 20px 40px;
+    padding: 20px 20px 30px;
+  }
+
+  .pos {
+    margin: 30px 20px 30px 20px;
   }
 
   .festfk {
@@ -153,12 +164,13 @@ label {
 
   .button1 {
     transform: scale(0.7);
+    margin-left: 0;
   }
 }
 
 /*          Desktop version         */
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 950px) {
   p,
   h1 {
     text-align: left;
@@ -166,7 +178,7 @@ label {
   }
 
   h1 {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   p {
@@ -174,25 +186,28 @@ label {
   }
 
   .selskaber {
-    margin: 50px 40px 20px 40px;
-    display: grid;
-    grid-template-columns: 2fr 2fr;
-  }
-
-  .pos {
-    padding: 0px 0px 0px 0px;
+    margin: 50px 0px 0px 150px;
   }
 
   .selskaber_styling {
-    padding: 50px 50px;
+    padding: 50px 80px 50px 80px;
+  }
+
+  .selskaber_layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .billede1 {
+    margin: 50px 150px 0px 0px;
+    object-fit: cover;
   }
 
   .festfk {
-    margin: 40px 40px 20px 40px;
+    margin: 50px 150px 50px 150px;
   }
 
   .festfk_styling {
-    padding: 50px 50px 60px;
+    padding: 50px 80px 50px 80px;
   }
 
   .order {
