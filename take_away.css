@@ -13,7 +13,7 @@ p {
 }
 
 .takeaway_intro {
-  background-color: var(--sort);
+  background-color: var(--sand);
 }
 
 .menu_grid {
@@ -25,11 +25,23 @@ p {
 }
 
 .frank_grid {
-  background-color: var(--sort);
+  background-color: var(--sand);
 }
 
 .servering_grid {
-  background-color: var(--sort);
+  background-color: var(--sand);
+}
+
+.menu_style {
+  color: var(--sort);
+}
+
+.menu_text {
+  color: var(--sort);
+}
+
+.h2_indhold {
+  color: var(--sort);
 }
 
 /****MOBIL VERSION****/
@@ -72,9 +84,6 @@ p {
   text-align: left;
 }
 
-.grid_1-1 {
-  margin-inline: ;
-}
 /****WEB VERSION****/
 
 @media screen and (min-width: 750px) {
