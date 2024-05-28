@@ -1,41 +1,21 @@
 <!DOCTYPE html>
-<html lang="da">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Selskaber</title>
-    <link rel="stylesheet" href="generel.css">
-    <link rel="stylesheet" href="header_footer.css">
+    <title>Document</title>
     <link rel="stylesheet" href="selskaber.css">
     <meta name="robots" content="noindex">
 </head>
 
+
+
+
 <body>
-    <header>
-        <div class="logo-header">
-            <a href="index.html">
-                <img src="logo_fk.png" alt="Logo">
-            </a>
-        </div>
-        <nav>
-            <ul class="menu">
-                <li><a href="menu.html">Menu</a></li>
-                <li><a href="take_away.html">Take-away</a></li>
-                <li><a href="book_bord.html">Book bord</a></li>
-                <li><a href="selskaber.html">Selskaber</a></li>
-                <li><a href="kontakt.html">Kontakt</a></li>
-            </ul>
-            <div class="burger">
-                <div class="line"></div>
-                <div class="line"></div>
-                <div class="line"></div>
-            </div>
-        </nav>
-    </header>
     <main>
         <div class="grid_1-1">
-            <img class="img_deg" src="frankskro_billeder/IMG_5685.JPG" alt="Billeder">
+            <img class="img_deg" src="img/328064044_1623779288050817_4751166276781532971_n.jpg" alt="Billeder">
 
             <div class="grid_1-2">
 
@@ -107,19 +87,36 @@
         </div>
         <div class="grid_3-1">
 
+            <div class="form-container">
+                <form action="/submit" method="post">
 
-            <div class="grid_3-2">
+                    <h2> Skal du holde fest eller event?
+                        <br>
+                        Skriv til os for at få et godt tilbud
+                        <br>
+                        <br>
+                    </h2>
+
+                    <input type="text" id="first-name" name="first-name" placeholder="Fornavn" required>
 
 
+                    <input type="text" id="last-name" name="last-name" placeholder="Efternavn" required>
 
-                <br>
-                <p>Form</p>
-                <br>
-                <br>
+
+                    <input type="tel" id="phone" name="phone" placeholder="Tlf. Nr." required>
+
+
+                    <textarea id="message" name="message" rows="4" placeholder="Skriv din besked her"
+                        required></textarea>
+
+                    <button type="submit">Send besked</button>
+                </form>
             </div>
 
 
         </div>
+
+
 
 
         <div class="baggrund"></div>
@@ -129,7 +126,7 @@
         </div>
 
     </main>
-    <script src="menu.js"></script>
+
 </body>
 
 </html>
