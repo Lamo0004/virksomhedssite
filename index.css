@@ -107,6 +107,17 @@ button {
   p {
     font-size: 14px;
   }
+
+  .hero_knap {
+    text-align: center;
+    display: grid;
+    gap: 4rem;
+    margin-inline: 0rem;
+  }
+
+  .lottie {
+    display: none;
+  }
 }
 
 /*** Decktop ***/
@@ -139,6 +150,14 @@ button {
   }
   .selskaber {
     padding: 2rem;
+  }
+  .hero_knap {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+  }
+  .hero_knap {
+    margin-inline: 2rem;
   }
 }
 
