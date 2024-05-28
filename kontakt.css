@@ -1,9 +1,15 @@
 body {
-  background-image: url(frankskro_billeder/IMG_5705.JPG);
-  backdrop-filter: blur(8px);
+  background-image: url(img/361619038_237004179276480_4396790369893044292_n.jpg);
+
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+header {
+  background-color: #ae61596b;
+}
+.menu a {
+  color: var(--sand);
 }
 
 p {
@@ -22,21 +28,6 @@ ul {
   margin-inline: 1.5rem;
 }
 
-.grid_2-1 {
-  background-color: var(--sort);
-  margin-bottom: 5rem;
-}
-.grid_2-5 {
-  background-color: var(--sort);
-  margin-bottom: 5rem;
-}
-.kontaktinfo {
-  place-self: center start;
-}
-.job {
-  place-self: center start;
-}
-
 iframe {
   width: 80%;
   height: 400px;
@@ -44,6 +35,7 @@ iframe {
 .maps {
   width: 100%;
   height: auto;
+  margin-top: 5rem;
   margin-bottom: 5rem;
   display: flex;
   justify-content: center;
@@ -55,18 +47,47 @@ iframe {
   .fjern {
     display: none;
   }
+  .kromad {
+    place-self: center start;
+    background-color: var(--sort);
+  }
+  .selskaber {
+    place-self: center start;
+    background-color: var(--sort);
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+  }
+  h1 {
+    font-size: 18px;
+  }
+  h3 {
+    font-size: 16px;
+  }
+  p {
+    font-size: 14px;
+  }
 }
 
 /*** Decktop ***/
 @media (min-width: 750px) {
-  .grid_2-1 {
+  .grid_1-1_1-1 {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    margin-top: 3.5rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 2fr;
   }
 
-  .grid_2-5 {
+  .kromad {
+    background-color: #ae6159;
+  }
+  .selskaber {
+    background-color: #ae6159;
     display: grid;
-    grid-template-columns: 3fr 5fr;
-    background-color: var(--sort);
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+  p {
+    line-height: 150%;
+    font-size: 16px;
   }
 }

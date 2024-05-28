@@ -27,21 +27,22 @@ html {
   --sand: #fbfbf1;
   --sand_t: #e4d9c7bb;
   --hover: #8d867b;
+  --header: #ae61596b;
 }
 
 /*** Overskrifter ***/
 th {
-  color: var(--sort);
+  color: var(--sand);
   padding-top: 1rem;
   font-family: "MADE Kenfolg";
 }
 td {
-  color: var(--sort);
+  color: var(--sand);
   font-family: "EB Garamond", serif;
   padding-bottom: 0.8rem;
 }
 h1 {
-  color: var(--sort);
+  color: var(--sand);
   padding-top: 1rem;
   font-family: "MADE Kenfolg";
 }
@@ -51,7 +52,7 @@ h2 {
   font-family: "MADE Kenfolg";
 }
 h3 {
-  color: var(--sort);
+  color: var(--sand);
   padding-top: 1rem;
   font-family: "MADE Kenfolg";
 }
@@ -64,6 +65,7 @@ p {
   color: var(--sand);
   font-family: "EB Garamond", serif;
   padding-bottom: 0.8rem;
+  max-width: 65ch;
 }
 
 dd {
