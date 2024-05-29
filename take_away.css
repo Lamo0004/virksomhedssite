@@ -136,6 +136,7 @@ p {
   .takeaway_grid {
     display: grid;
     grid-template-columns: 2fr 2fr;
+    place-self: center start;
   }
 
   .takeaway_intro {
@@ -144,6 +145,7 @@ p {
     margin-bottom: 3rem;
     padding-left: 2rem;
     padding-bottom: 2rem;
+    place-self: center start;
   }
 
   .menu_grid {
@@ -152,6 +154,7 @@ p {
     margin-right: 3rem;
     margin-bottom: 3rem;
     padding-bottom: 2rem;
+    place-self: center start;
   }
 
   .bestil_grid {
@@ -159,6 +162,7 @@ p {
     margin-left: 3rem;
     margin-right: 3rem;
     margin-bottom: 3rem;
+    place-self: center start;
   }
 
   .frank_grid {
