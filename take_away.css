@@ -92,19 +92,18 @@ p {
 
 @media screen and (min-width: 750px) {
   p {
-    font-size: 1.3rem;
-    padding-block: 1.2rem;
-    padding-inline: 1.5rem;
+    font-size: 1rem;
+
+    padding-inline: 1.05rem;
   }
 
   h1 {
     padding-inline: 1rem;
+    font-size: 1.2rem;
   }
-
   .h2_indhold {
-    padding-inline: 1rem;
+    font-size: 1.1rem;
   }
-
   h3 {
     padding-inline: 1rem;
   }
@@ -112,13 +111,14 @@ p {
   h4 {
     padding-inline: 1rem;
     padding-bottom: 0.5rem;
+    font-size: 0.9rem;
   }
 
   dl {
     padding-inline: 1rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    font-size: 1.3rem;
+    font-size: 1rem;
   }
 
   dd {
