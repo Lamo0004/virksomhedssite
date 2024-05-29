@@ -158,6 +158,9 @@ button {
   .hero_knap {
     margin-inline: 2rem;
   }
+  .form {
+    margin-top: 2.5rem;
+  }
 }
 
 /*** Form ***/
