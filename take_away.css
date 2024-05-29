@@ -133,6 +133,11 @@ p {
   }
 
   .takeaway_intro {
+    /* margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 3rem;
+    padding-left: 2rem;
+    padding-bottom: 2rem; */
     display: grid;
     grid-template-columns: 1fr 1fr;
 
@@ -167,8 +172,4 @@ p {
     margin-right: 10rem;
     margin-bottom: 5rem;
   }
-
-  /* .order {
-    order: 1;
-  } */
 }
