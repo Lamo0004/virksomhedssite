@@ -86,17 +86,17 @@ h3 {
   th {
     text-align: left;
     border-bottom: solid 0.05rem;
-    font-size: 14px;
+    font-size: 1.1em;
     line-height: 2rem;
   }
   td {
     text-align: left;
-    font-size: 12px;
+    font-size: 1.1rem;
   }
 
   h3 {
     line-height: 2rem;
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
 
   .mad_grid {
