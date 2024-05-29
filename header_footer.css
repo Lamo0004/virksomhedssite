@@ -59,7 +59,7 @@ nav {
 .burger .line {
   width: 80%;
   height: 1.7px;
-  background-color: var(--sort);
+  background-color: var(--sand);
   margin-bottom: 5px;
   transition: 0.2s linear;
 }
@@ -158,10 +158,9 @@ ul {
 
   nav.active .menu {
     display: block;
-
     backdrop-filter: blur(8px);
     position: absolute;
-    top: 60px;
+    top: 100px;
     left: 0;
     width: 100%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
