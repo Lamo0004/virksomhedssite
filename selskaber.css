@@ -5,6 +5,9 @@ body {
   background-size: cover;
   background-position: center;
 }
+header {
+  background-color: #ae61596b;
+}
 
 h1 {
   color: rgb(255, 255, 255);
