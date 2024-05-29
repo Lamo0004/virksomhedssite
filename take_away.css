@@ -46,11 +46,6 @@ p {
   color: var(--sand);
 }
 
-.hero {
-  text-align: center;
-  color: var(--sort);
-}
-
 /****MOBIL VERSION****/
 
 @media (max-width: 750px) {
@@ -63,27 +58,28 @@ p {
   h4 {
     text-align: center;
   }
-
+  p {
+    font-size: 16px;
+    padding: 1rem;
+  }
   .takeaway_intro {
-    padding-top: 2rem;
     margin-bottom: 7rem;
   }
   .menu_grid {
-    padding-top: 1rem;
     margin-bottom: 7rem;
     padding-bottom: 2rem;
   }
 
   .bestil_grid {
-    padding-bottom: 4rem;
+    margin-bottom: 4rem;
+    padding-bottom: 2rem;
   }
 
   .frank_grid {
-    padding-bottom: 4rem;
+    margin-bottom: 4rem;
   }
 
   .servering_grid {
-    padding-top: 2rem;
     padding-bottom: 4rem;
   }
 }
@@ -97,18 +93,17 @@ p {
 @media screen and (min-width: 750px) {
   p {
     font-size: 1rem;
-    padding-block: 1.2rem;
-    padding-inline: 1.5rem;
+
+    padding-inline: 1.05rem;
   }
 
   h1 {
     padding-inline: 1rem;
+    font-size: 1.2rem;
   }
-
   .h2_indhold {
-    padding-inline: 1rem;
+    font-size: 1.1rem;
   }
-
   h3 {
     padding-inline: 1rem;
   }
@@ -116,13 +111,14 @@ p {
   h4 {
     padding-inline: 1rem;
     padding-bottom: 0.5rem;
+    font-size: 0.9rem;
   }
 
   dl {
     padding-inline: 1rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    font-size: 1.3rem;
+    font-size: 1rem;
   }
 
   dd {
@@ -131,7 +127,9 @@ p {
 
   .takeaway_grid {
     display: grid;
-    grid-template-columns: 2fr 2fr;
+    grid-template-columns: 1fr 1fr;
+    margin: -1rem;
+    padding: 2rem;
   }
 
   .takeaway_intro {
@@ -139,7 +137,11 @@ p {
     margin-right: 1rem;
     margin-bottom: 3rem;
     padding-left: 2rem;
-    padding-bottom: 2rem;
+    padding-bottom: 2rem; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    margin: 4rem;
   }
 
   .menu_grid {
@@ -148,7 +150,6 @@ p {
     margin-right: 3rem;
     margin-bottom: 3rem;
     padding-bottom: 2rem;
-    place-self: center start;
   }
 
   .bestil_grid {
@@ -156,7 +157,6 @@ p {
     margin-left: 3rem;
     margin-right: 3rem;
     margin-bottom: 3rem;
-    place-self: center start;
   }
 
   .frank_grid {
@@ -172,9 +172,7 @@ p {
     margin-right: 10rem;
     margin-bottom: 5rem;
   }
-
-  /* .order {
-    order: 1;
-  } */
+  .hero {
+    padding-block: 1.2rem;
   }
 }
