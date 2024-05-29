@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.5">
-    <link rel="stylesheet" href="take_away.css">
     <link rel="stylesheet" href="generel.css">
+    <link rel="stylesheet" href="header_footer.css">
+    <link rel="stylesheet" href="take_away.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -19,13 +20,25 @@
 
 <body>
     <header>
+        <div class="logo-header">
+            <a href="index.html">
+                <img src="logo_fk.png" alt="Logo">
+            </a>
+        </div>
         <nav>
-            <a href="index.html">Forside</a>
-            <a href="book_bord.html">Book Bord</a>
-            <a href="menu.html">Menu</a>
-            <a href="take_away.html">Take away</a>
+            <ul class="menu">
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="take_away.html">Take-away</a></li>
+                <li><a href="book_bord.html">Book bord</a></li>
+                <li><a href="selskaber.html">Selskaber</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
         </nav>
-
     </header>
     <main>
         <div class="takeaway_intro">
@@ -71,7 +84,7 @@
                 <h4 class="menu_style">Mad ud af huset ved afhentning.</h4>
                 <p class="menu_style">Hent den i vores restaurant på Fredensgade 11, 2200 København N.</p>
                 <h4 class="menu_style">Hvordan bestiller jeg?</h4>
-                <p class="menu_style">Giv os et ring på tlf. +45 25 39 35 39 Eller send os en mail på:
+                <p class="menu_style">Giv os et ring på tlf. +45 25 39 35 39 <br> Eller send os en mail på:
                     frankskro11@gmail.com</p>
             </div>
         </div>
@@ -94,14 +107,8 @@
                 <p class="menu_style">
                     Kontakt os gerne hurtigst muligt, for at vi kan lave den bedste løsning til jer.
                 </p>
-            </div>
-        </div>
-
-        <div class="servering_grid">
-            <div class="serve_img">
-                <img src="img/391613243_17888920418924247_8605938032101279000_n.jpg" alt="Få hjælp til serveringen">
-            </div>
-            <div>
+                <br>
+                <br>
                 <h2 class="h2_indhold">Få hjælp til serveringen</h2>
                 <p class="menu_style">Her tilbyder vi, at levere servering til jeres næste fest eller event. Vi sørger
                     for professionelt og
@@ -118,7 +125,10 @@
                     Kontakt os gerne hurtigst muligt, for at vi kan lave den bedste løsning til jer.
                 </p>
             </div>
+
+
         </div>
+
 
     </main>
     <footer>
@@ -160,7 +170,8 @@
             </div>
         </div>
     </footer>
-
+    <script src="menu.js"></script>
+    <script src="login.js"> </script>
 </body>
 
 </html>

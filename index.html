@@ -11,6 +11,7 @@
         href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="generel.css">
+    <link rel="stylesheet" href="header_footer.css">
     <link rel="stylesheet" href="index.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -18,29 +19,45 @@
 
 <body>
     <header>
+        <div class="logo-header">
+            <a href="index.html">
+                <img src="logo_fk.png" alt="Logo">
+            </a>
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="take_away.html">Take-away</a></li>
+                <li><a href="book_bord.html">Book bord</a></li>
+                <li><a href="selskaber.html">Selskaber</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </nav>
     </header>
-    <div>
-        <video autoplay loop muted plays-inline class="video">
-            <source src="" type="video/mp4">
+    <div class="container">
+        <video autoplay loop muted class="video">
+            <source src="img/hero_video_v1.mp4" type="video/mp4">
         </video>
         <div class="content">
             <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
                 type="module"></script>
-            <dotlottie-player src="https://lottie.host/a0fc4262-e027-4ce6-91de-fbb25965a8da/fHP3kIspTY.json"
-                background="transparent" speed="1" style="width: 500px; height: 300px;" loop
-                autoplay></dotlottie-player>
-            <div>
-                <a class="knap" href="book_bord.html">Book Bord</a>
-                <a class="knap" href="menu.html">Menu</a>
-                <a class="knap" href="take_away.html">Take away</a>
+            <dotlottie-player class="lottie"
+                src="https://lottie.host/a0fc4262-e027-4ce6-91de-fbb25965a8da/fHP3kIspTY.json" background="transparent"
+                speed="1" style="width: 1000px; height: 300px;" loop autoplay></dotlottie-player>
+            <div class="hero_knap">
+                <a class="h_knap" href="book_bord.html">Book Bord</a>
+                <a class="h_knap" href="menu.html">Menu</a>
+                <a class="h_knap" href="take_away.html">Take away</a>
             </div>
         </div>
     </div>
     <main>
-        <div class="grid_1-2">
-            <div>
-                <img src="img/333107691_1264090764316972_9165378342895399679_n.jpg" alt="mad">
-            </div>
+        <div class="grid_1-1_1-1">
             <div class="kromad">
                 <h1>Traditionel dansk kromad</h1>
                 <p>Velkommen til Frank's Kro! Her serverer vores hjertevarme, nærværende personale klassisk dansk
@@ -50,12 +67,9 @@
                     København,
                     og træd ind i de
                     nostalgiske lokaler på Fredensgade 11. Vi glæder os til at tage imod jer!</p>
-                <a class="knap" href="menu.html">Menu</a>
-            </div>
-        </div>
-        <div class="grid_2-1">
-            <div class="order">
-                <img src="img/381031668_17886928562924247_5247697157251375291_n.jpg" alt="selskaber">
+                <button class="btn">
+                    <a href="menu.html">Menu &#8250;</a>
+                </button>
             </div>
             <div class="selskaber">
                 <h1>Selskaber</h1>
@@ -64,15 +78,18 @@
                     firmaarrangement,
                     julefrokost, påskefrokost og så videre, så er vi der for at sørge for at I får den sjoveste dag
                     eller aften. </p>
-                <a class="knap" href="selskaber.html">Selskaber</a>
+                <button class="btn">
+                    <a href="selskaber.html">Selskaber &#8250;</a>
+                </button>
             </div>
         </div>
+
         <div class="form">
             <h2>Tilmeld dig vores nyhedsbrev</h2>
             <form class="bokse">
                 <input name="fname" type="text" placeholder=Fornavn>
                 <input name="email" type="email" placeholder=E-mail>
-                <button type="submit">Tilmeld</button>
+                <button class="tilmeld" type=" submit">Tilmeld</button>
             </form>
         </div>
     </main>
@@ -115,6 +132,9 @@
             </div>
         </div>
     </footer>
+    <script src="menu.js"></script>
+    <script src="knap.js"></script>
+    <script src="login.js"> </script>
 </body>
 
 </html>

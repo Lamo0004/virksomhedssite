@@ -1,93 +1,95 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: serif;
-}
-
-.baggrund {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  min-height: 200vh;
-  background-image: url(frankskro_billeder/IMG_5712.JPG);
+body {
+  background-image: url(img/419735619_17902541279924247_3598807652102186383_n.jpg);
+  backdrop-filter: blur(8px);
   background-repeat: no-repeat;
   background-size: cover;
-  z-index: -1;
-  filter: blur(5px);
+  background-position: center;
 }
 
-.content {
-  color: #fff;
-  margin-top: 20px;
+h1 {
+  color: rgb(255, 255, 255);
+}
+
+p {
+  color: rgb(255, 255, 255);
+}
+
+.hr {
+  color: white;
+}
+
+.selskaber {
+  background-color: var(--sort);
+}
+
+.selskaber_styling {
+  background-color: var(--sort);
+  line-height: 1.5;
+}
+
+.festfk {
+  background-color: var(--sort);
+}
+
+.festfk_styling {
+  background-color: var(--sort);
+  line-height: 1.5;
+}
+
+/*      Form     */
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.form_styling {
+  background-color: var(--transparent);
+  background-color: transparent;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  min-width: 300px;
+}
+
+label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.button1 {
+  background-color: transparent;
+  border: 1px solid rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
+  padding: 10px 32px;
   text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button1:hover {
+  background-color: rgb(255, 255, 255);
   color: black;
 }
 
-.content h1 {
-  margin-bottom: 10px;
-}
-
-.content p {
-  font-size: 20px;
-  filter: none;
-}
-.img_deg {
-  float: right;
-  width: 30%;
-  color: beige;
-}
-.grid_1-1 {
-  position: absolute;
-  width: 90%;
-  left: 5%;
-  top: 15%;
-  background-color: #262626;
-  padding: 30px;
-  color: beige;
-  font-size: 0.8rem;
-  margin-bottom: 20px;
-}
-.grid_1-2 {
-  width: 65ch;
-  line-height: 1.5;
-}
-
-.grid_2-1 {
-  position: absolute;
-  width: 90%;
-  left: 5%;
-  top: 55%;
-  background-color: #262626;
-  padding: 30px;
-  color: beige;
-  font-size: 0.8rem;
-}
-.grid_2-2 {
-  width: 65ch;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  line-height: 1.5;
-}
-.grid_3-1 {
-  position: absolute;
-  width: 90%;
-  left: 5%;
-  top: 140%;
-  background-color: transparent;
-  padding: 30px;
-  color: beige;
-  font-size: 0.8rem;
-  margin-bottom: 20px;
-}
-
-.grid_3-2 {
-}
-
-.button {
-  background-color: #262626;
-  border: 1px solid beige;
+.button2 {
+  background-color: #715555;
+  border: 1px solid rgb(0, 0, 0);
   color: beige;
   padding: 10px 32px;
   text-align: center;
@@ -99,7 +101,124 @@
   transition: background-color 0.3s ease;
 }
 
-.button:hover {
-  background-color: beige;
-  color: black;
+.button2:hover {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+}
+
+.footer {
+  text-align: left;
+}
+
+/*          Mobil version         */
+
+@media (max-width: 950px) {
+  p,
+  h1 {
+    text-align: left;
+    padding-bottom: 10px;
+  }
+  h1 {
+    font-size: 1.2rem;
+  }
+  p {
+    font-size: 0.6rem;
+  }
+
+  h2 {
+    font-size: 1rem;
+    padding-left: 0;
+  }
+
+  .selskaber {
+    margin: 40px 20px 20px 20px;
+  }
+
+  .selskaber_styling {
+    padding: 20px 20px 30px;
+  }
+
+  .pos {
+    margin: 30px 20px 30px 20px;
+  }
+
+  .festfk {
+    margin: 1rem;
+  }
+  .festfk_styling {
+    padding: 20px 20px 40px;
+  }
+
+  input,
+  textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #000000;
+    background-color: rgba(228, 225, 225, 0.8);
+    font-size: 0.5rem;
+  }
+
+  .form_styling {
+    transform: scale(0.8);
+  }
+
+  .button1 {
+    transform: scale(0.7);
+    margin-left: 0;
+  }
+}
+
+/*          Desktop version         */
+
+@media screen and (min-width: 950px) {
+  p,
+  h1 {
+    text-align: left;
+    padding-bottom: 10px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  .selskaber {
+    margin: 50px 0px 0px 150px;
+  }
+
+  .selskaber_styling {
+    padding: 50px 80px 50px 80px;
+  }
+
+  .selskaber_layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .billede1 {
+    margin: 50px 150px 0px 0px;
+    object-fit: cover;
+  }
+
+  .festfk {
+    margin: 50px 150px 50px 150px;
+  }
+
+  .festfk_styling {
+    padding: 50px 80px 50px 80px;
+  }
+
+  .order {
+    order: 1;
+  }
+  input,
+  textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #000000;
+    background-color: rgba(228, 225, 225, 0.8);
+    font-size: 0.5rem;
+  }
 }

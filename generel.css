@@ -4,12 +4,15 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+.logo-header {
+  width: 8%;
+}
 img,
 video {
   width: 100%;
   height: auto;
   display: block;
+  object-fit: cover;
 }
 
 /*** Fonte ***/
@@ -20,10 +23,11 @@ video {
 
 /*** Variabler – farver ***/
 html {
-  --sort: #262626;
-  --sand: #e4d9c7;
+  --sort: #ae6159;
+  --sand: #fbfbf1;
   --sand_t: #e4d9c7bb;
   --hover: #8d867b;
+  --header: #ae61596b;
 }
 
 /*** Overskrifter ***/
@@ -61,6 +65,7 @@ p {
   color: var(--sand);
   font-family: "EB Garamond", serif;
   padding-bottom: 0.8rem;
+  max-width: 65ch;
 }
 
 dd {
@@ -80,131 +85,43 @@ ul {
   padding-bottom: 0.8rem;
 }
 
-.knap {
-  border: 2.5px solid var(--sand);
-  border-radius: 0.1rem;
-  padding: 0.5rem;
-}
-
-/*** MENU ***/
-
-nav ul {
-  width: 100%;
-  list-style: none;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
-nav li {
-  height: 50px;
-}
-nav a {
-  height: 100%;
-  padding: 0 30px;
+.btn {
+  transition: all 0.4s;
+  background-color: var(--sand);
+  border-radius: 0.2rem;
+  padding: 0.7rem 1.2rem;
+  color: var(--sort);
   text-decoration: none;
-  display: flex;
-  align-items: center;
-  color: var(--sand_t);
-  font-family: "MADE Kenfolg";
-}
-nav a:hover {
-  color: #262626;
-}
-nav li:first-child {
-  margin-right: auto;
-}
-.sidebar {
-  position: fixed;
-  top: 0;
-  right: 0;
-  height: 100vh;
-  width: 250px;
-  z-index: 999;
-  background-color: black;
-  display: none;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-}
-.sidebar li {
-  width: 100%;
-}
-.sidebar a {
-  width: 100%;
-}
-.menu-button {
-  display: none;
-}
-a {
-  color: var(--sand);
-  font-family: "MADE Kenfolg";
-  text-decoration: none;
-  font-size: 1.2rem;
+  transition: transform 0.3s ease-in-out;
+  font-family: "EB Garamond", serif;
+  font-weight: 600;
 }
 
-a:hover {
-  color: var(--hover);
-}
-/*** FOOTER ***/
-footer {
-  background-color: var(--sort);
+.btn:hover {
+  transform: scale(1.1);
 }
 
-.grid_1-1 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
-.fa {
-  padding: 1rem;
-  font-size: 1.5rem;
-  text-decoration: none;
-  color: var(--sand);
-}
-
-.fa:hover {
-  opacity: 0.7;
-}
-
-.bundlinje {
-  place-items: center center;
-}
-
-.links {
-  color: var(--sand);
-  font-size: 0.8rem;
+.h_knap {
+  border-radius: 0.2rem;
+  border: solid 1px;
   padding: 0.5rem;
   font-family: "EB Garamond", serif;
-  text-decoration-line: underline;
+  font-weight: 600;
+  width: 100%;
+  margin-inline: 2rem;
+  color: var(--sand);
+  text-decoration: none;
+  transition: transform 0.3s ease-in-out;
+  font-family: "EB Garamond", serif;
+  font-weight: 600;
 }
 
-@media (max-width: 750px) {
-  .bundlinje {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-  }
-  .hideOnMobile {
-    display: none;
-  }
-  .menu-button {
-    display: block;
-  }
+.h_knap:hover {
+  background-color: var(--sort);
+  color: var(--sand);
+  transition: 0.5s;
 }
-@media (min-width: 750px) {
-  .bundlinje {
-    display: grid;
-    grid-template-columns: 2fr 1fr 2fr;
-  }
 
-  .ikoner {
-    grid-column: 2;
-  }
-
-  .links {
-    grid-column: 3;
-  }
-
-  .grid_1-1 {
-    margin-inline: 2rem;
-  }
+a {
+  text-decoration: none;
 }

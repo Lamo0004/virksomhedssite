@@ -1,6 +1,15 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  /* background-color: var(--sand_t); */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: fixed;
+}
+
 body {
-  background-image: url(frankskro_billeder/IMG_5694.JPG);
-  backdrop-filter: blur(8px);
+  background-image: url(img/391613243_17888920418924247_8605938032101279000_n.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -9,34 +18,23 @@ body {
 p {
   margin-block: 3rem;
   margin-inline: 1.5rem;
-  max-width: 65ch;
+  color: #fbfbf1;
 }
 
 h1 {
   margin-inline: 1.5rem;
+  color: #fbfbf1;
 }
 
-.knap {
-  margin-inline: 1.5rem;
-}
-
-.grid_1-2 {
-  background-color: var(--sort);
-  margin-bottom: 5rem;
-  padding-bottom: 4rem;
-}
-
-.grid_2-1 {
-  background-color: var(--sort);
-  margin-bottom: 5rem;
-  padding-bottom: 4rem;
-}
-
-.kromad {
-  place-self: center start;
-}
-.selskaber {
-  place-self: center start;
+button {
+  background-color: var(--sand_t);
+  border: 2.5px solid var(--sand);
+  border-radius: 0.1rem;
+  margin-inline: 1rem;
+  padding: 0.3rem;
+  font-family: "MADE Kenfolg";
+  color: var(--sand);
+  text-decoration: none;
 }
 
 /*** HERO-section ***/
@@ -50,23 +48,24 @@ h1 {
 }
 
 .content {
-  position: relative;
+  position: absolute;
 }
 
 .lottie {
   width: 100%;
+  pointer-events: none;
 }
 
 .video {
   position: absolute;
-  right: 0;
+  left: 0;
   bottom: 0;
   z-index: -1;
-  object-fit: cover;
-  width: auto;
+  width: 100%;
   height: 100%;
   overflow: hidden;
   object-fit: cover;
+  pointer-events: none;
 }
 
 @media (min-aspect-ration: 16/9) {
@@ -94,25 +93,49 @@ h1 {
   button {
     margin-block: 0.8rem;
   }
-  .grid_1-2 .grid_2-1 {
-    padding-bottom: 4rem;
+  .kromad {
+    background-color: var(--sort);
+  }
+  .selskaber {
+    background-color: var(--sort);
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+  }
+  h1 {
+    font-size: 18px;
+  }
+  p {
+    font-size: 14px;
+  }
+
+  .hero_knap {
+    text-align: center;
+    display: grid;
+    gap: 4rem;
+    margin-inline: 0rem;
+  }
+
+  .lottie {
+    display: none;
   }
 }
 
 /*** Decktop ***/
 @media (min-width: 750px) {
-  .grid_1-2 {
+  .grid_1-1_1-1 {
     display: grid;
-    grid-template-columns: 1fr 2fr;
-    margin-bottom: 5rem;
-    padding-bottom: 0rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
   }
 
-  .grid_2-1 {
+  .kromad {
+    background-color: var(--sort);
+  }
+  .selskaber {
+    background-color: var(--sort);
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    margin-bottom: 5rem;
-    padding-bottom: 0rem;
+    grid-column: 2/3;
+    grid-row: 2/3;
   }
 
   input {
@@ -128,12 +151,13 @@ h1 {
   .selskaber {
     padding: 2rem;
   }
-}
-
-/*** Stor decktop ***/
-@media (min-width: 1200px) {
-  .space {
-    margin-inline: 6rem;
+  .hero_knap {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+  }
+  .hero_knap {
+    margin-inline: 2rem;
   }
 }
 
@@ -150,20 +174,20 @@ input {
   margin-inline: 1rem;
   padding: 0.3rem;
   font-family: "EB Garamond", serif;
-  color: var(--sort);
+  color: var(--sand);
   width: 15rem;
 }
 
-button {
-  background-color: var(--sand_t);
-  border: 2.5px solid var(--sand);
-  border-radius: 0.1rem;
-  margin-inline: 1rem;
-  padding: 0.3rem;
-  font-family: "MADE Kenfolg";
-  color: var(--sort);
+.tilmeld {
+  border-radius: 0.2rem;
+  border: solid 1px;
+  font-family: "EB Garamond", serif;
+  font-weight: 600;
+  padding-inline: 1rem;
 }
 
-button:hover {
-  color: var(--hover);
+.tilmeld:hover {
+  background-color: var(--sort);
+  color: var(--sand);
+  transition: 0.5s;
 }
