@@ -164,6 +164,7 @@ ul {
 
   nav.active .menu {
     display: block;
+    background-color: var(--header);
     backdrop-filter: blur(8px);
     position: absolute;
     top: 100px;

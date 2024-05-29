@@ -1,5 +1,5 @@
 body {
-  background-image: url(img/419735619_17902541279924247_3598807652102186383_n.jpg);
+  background-image: url(img/419735619_17902541279924247_3598807652102186383_n.webp);
   backdrop-filter: blur(8px);
   background-repeat: no-repeat;
   background-size: cover;
@@ -7,6 +7,11 @@ body {
 }
 header {
   background-color: #ae61596b;
+}
+
+img {
+  width: 100%;
+  height: auto;
 }
 
 h1 {
@@ -81,7 +86,7 @@ label {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 12px;
+  font-size: 0.75rem;
   margin: 4px 2px;
   cursor: pointer;
   transition: background-color 0.3s ease;
@@ -101,7 +106,7 @@ label {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 12px;
+  font-size: 0.75rem;
   margin: 4px 2px;
   cursor: pointer;
   transition: background-color 0.3s ease;
@@ -124,7 +129,7 @@ label {
     font-size: 1.2rem;
   }
   p {
-    font-size: 0.6rem;
+    font-size: 0.75rem;
   }
 
   h2 {
@@ -141,7 +146,7 @@ label {
   }
 
   .pos {
-    margin: 30px 20px 30px 20px;
+    margin: 30px 70px 0px 70px;
   }
 
   .festfk {
@@ -158,7 +163,7 @@ label {
     border: 1px solid #ffffff;
     border-radius: 0.1rem;
     background-color: rgba(228, 225, 225, 0.8);
-    font-size: 0.5rem;
+    font-size: 0.75rem;
   }
 
   .form_styling {
